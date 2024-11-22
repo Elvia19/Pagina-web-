@@ -1,0 +1,84 @@
+/* Estilos para la sección de Acuerdos de Paz */
+#acuerdos-paz {
+    background: linear-gradient(145deg, #f7f4f0, #eae6df); /* Fondo degradado suave */
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Sombra profunda */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #acuerdos-paz h2 {
+    color: #283593; /* Azul elegante */
+    font-family: 'Playfair Display', serif; /* Fuente artística */
+    font-size: 3rem; /* Tamaño grande */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #283593;
+  }
+  
+  #acuerdos-paz ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  
+  #acuerdos-paz li {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff; /* Fondo para cada ítem */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #acuerdos-paz li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  #acuerdos-paz img {
+    width: 100px; /* Ajustado a 100px */
+    height: 100px; /* Ajustado a 100px */
+    object-fit: cover;
+    border-radius: 10px; 
+    margin: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para videos en la sección Acuerdos de Paz */
+  #acuerdos-paz #videos {
+    display: flex; /* Organización horizontal */
+    flex-direction: row; /* Videos en una fila */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    gap: 20px; /* Espacio entre videos */
+    margin: 20px 0; /* Margen superior e inferior */
+  }
+  
+  #acuerdos-paz #videos iframe {
+    width: 100%; /* Video a tamaño completo */
+    max-width: 400px; /* Máximo ancho de 400px */
+    height: 200px; /* Altura de cada video */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra decorativa */
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+  }
+  
+  #acuerdos-paz #videos iframe:hover {
+    transform: scale(1.05); /* Leve aumento al pasar el ratón */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+  }
+  

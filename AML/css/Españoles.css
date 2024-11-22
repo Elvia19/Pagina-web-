@@ -1,0 +1,162 @@
+/* Estilos ultra modernos y artísticos para la sección de Conquista */
+#conquista {
+  background: linear-gradient(145deg, #f7f4f0, #eae6df); /* Fondo degradado suave */
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Sombra profunda */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#conquista::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
+  border-radius: 50%;
+  z-index: 1;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+      opacity: 0.5;
+  }
+  50% {
+      transform: scale(1.5);
+      opacity: 0.2;
+  }
+}
+
+#conquista h2 {
+  color: #283593; /* Azul elegante */
+  font-family: 'Playfair Display', serif; /* Fuente artística */
+  font-size: 3rem; /* Tamaño grande */
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #283593;
+}
+
+#conquista h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6f61, #fbc02d);
+  border-radius: 10px;
+  animation: flow 3s infinite;
+}
+
+@keyframes flow {
+  0% {
+      transform: translateX(-50%) scaleX(0.5);
+  }
+  50% {
+      transform: translateX(-50%) scaleX(1.2);
+  }
+  100% {
+      transform: translateX(-50%) scaleX(0.5);
+  }
+}
+
+#conquista ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+#conquista li {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff; /* Fondo para cada ítem */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#conquista li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#conquista li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.4), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#conquista li:hover::before {
+  opacity: 1;
+}
+
+#conquista img {
+  width: 200px; /* Tamaño aumentado */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 5px solid #fbc02d; /* Borde decorativo dorado */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+#conquista img:hover {
+  transform: rotate(-5deg) scale(1.1); /* Giro y zoom al pasar el ratón */
+}
+
+#conquista li p {
+  font-family: 'Poppins', sans-serif; /* Fuente moderna */
+  font-size: 1.3rem;
+  color: #424242;
+  line-height: 1.8;
+  margin: 0;
+  text-align: justify; /* Justificar las descripciones */
+}
+
+#conquista li p strong {
+  color: #ff6f61; /* Resaltado en rojo coral */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+/* Estilo específico para los videos en la sección de Conquista */
+#conquista #videos {
+  display: flex; /* Organización horizontal */
+  flex-direction: row; /* Videos en una fila */
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  gap: 20px; /* Espacio entre videos */
+  margin: 20px 0; /* Margen superior e inferior */
+}
+
+#conquista #videos iframe {
+  width: 400px; /* Ancho de cada video */
+  height: 200px; /* Altura de cada video */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra decorativa */
+}

@@ -1,0 +1,232 @@
+/* Importación de fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Dancing+Script:wght@400;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Fuente slab serif */
+    margin: 0;
+    padding: 0;
+    background-color: #d21515; /* Fondo suave */
+    color: #1f173c;
+}
+
+/* Contenedor del título con imagen de fondo */
+.title-container {
+    background-image: url("../images/Designer.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0c0c0c;
+    font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Fuente slab serif */
+    text-shadow: 2px 2px 6px rgba(29, 6, 158, 0.5);
+    font-size: 2rem;
+    text-align: center;
+    animation: titleAnimation 2s ease-in-out;
+}
+
+/* Barra de navegación (sin cambios) */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+    background-color: #0a0a0a;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(159, 167, 26);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #131330;
+}
+
+/* Secciones */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f1a461;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    transform: translateY(10px);
+    opacity: 0;
+    animation: sectionFadeIn 0.8s forwards;
+}
+
+@keyframes sectionFadeIn {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.section:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Títulos de las secciones */
+.section h2 {
+    font-family: 'Roboto Slab', serif; /* Fuente slab serif */
+    font-size: 2rem;
+    color: #0e0434; /* Naranja vibrante */
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1 px;
+    animation: titleAppear 1s ease-in-out;
+}
+
+@keyframes titleAppear {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Párrafos con efectos dinámicos */
+.section p {
+    font-size: 1.3rem;
+    color: #130202;
+    line-height: 1.5;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Fuente script para párrafos dinámicos */
+}
+
+.section p:hover {
+    color: #0f1644; /* Cambio de color al pasar el ratón */
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
+    font-weight: bold;
+}
+
+/* Contenedores de información */
+.info-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #dfdef0;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Efecto hover sobre los contenedores */
+.info-container:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Imágenes dentro de contenedores */
+.info-container img {
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.info-container img:hover {
+    transform: scale(1); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Botones con efecto de animación */
+.btn-inicio {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #1b0703; /* Naranja brillante */
+    color: #ea2020;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.btn-inicio:hover {
+    background-color: #041159;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-inicio:active {
+    background-color: #5800c4;
+    transform: scale(0.95);
+}
+
+/* Estilos para el texto de citas o frases */
+#frases blockquote {
+    font-size: 1.5rem;
+    color: #333;
+    border-left: 5px solid #2980B9;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 3;
+    transition: all 0.3s ease;
+}
+
+#frases blockquote:hover {
+    color: #2980B9;
+    transform: translateX(10px);
+}
+
+/* Enlaces en las frases */
+#frases a {
+    color: #3498DB;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#frases a:hover {
+    text-decoration: underline;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 2.2rem;
+    }
+
+    .info-container {
+        width: 90%;
+    }
+
+    .btn-inicio {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+/* Estilo específico para el video en la sección de Equidad */
+#equidad .video-container {
+    width: 90%; /* Aumentar el ancho */
+    max-width: 800px; /* Límite máximo de ancho */
+    margin: 0 auto; /* Centrar el video */
+    padding: 20px;
+}
+
+#equidad .video-container iframe {
+    width: 100%;
+    height: 450px; /* Incrementar la altura */
+    border: none; /* Eliminar bordes */
+    border-radius: 10px; /* Añadir esquinas redondeadas */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+}

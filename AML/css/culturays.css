@@ -1,0 +1,84 @@
+.cultura-sociedad {
+    padding: 20px;
+    background-color: #f8f1e7;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 900px;
+    font-family: 'Times New Roman', serif;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2.5em;
+    color: #5a2e2e;
+    border-bottom: 2px solid #5a2e2e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.descripcion p {
+    text-align: justify;
+}
+
+.descripcion video {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.apartado {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 10px solid #c6946d;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+/* Aquí se añade la alineación en columnas para texto y contenido de imágenes */
+.contenido-apartado {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre el texto y las imágenes */
+}
+
+.texto-apartado {
+    flex: 1; /* Para que el texto ocupe más espacio */
+}
+
+.apartado h2 {
+    font-size: 1.8em;
+    color: #5a2e2e;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.apartado p {
+    color: #444;
+    line-height: 1.6;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.imagenes-apartado {
+    display: flex;
+    flex-direction: column; /* Coloca las imágenes en una columna */
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.apartado img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
